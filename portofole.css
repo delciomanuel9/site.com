@@ -1,0 +1,322 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: white;
+    width: 100%;
+    height: 150vh;
+}
+header{
+    width: 100%;
+    background-color: #ffff;
+    box-shadow: 0px 0px 10px #2020203a;
+    position: fixed;
+    left: 0;
+    top: 0; 
+}
+.home{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.2rem 6rem;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    padding: 20px 10px;
+}
+nav ul li a{
+    color: black;
+    text-decoration: none;
+    padding: 20px 30px;
+    font-size: 16px;
+    transition: .2s;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+nav ul li a:hover{
+    background-color: aqua;
+    color: white;
+}
+.logo img{
+    border-radius: 60px;
+    border: none;
+}
+.btn-cont button{
+    width: 120px;
+    height: 40px;
+    border: none;
+    border-radius: 6px;
+    background-color: aqua;
+    margin-top: 20px;
+    cursor: pointer;
+    color: white;
+}
+.menu-mobile{
+    display: none;
+}
+.menu-mobile ul{
+    list-style: none;
+    padding: 30px 10px;
+}
+.menu-mobile ul li a{
+    text-decoration: none;
+    color: #000;
+    display: flex;
+    padding: 10px 10px;
+}
+.btn-mobile{
+    display: none;
+}
+
+@media screen and (max-width: 730px){
+    nav ul{
+        display: none;
+    }
+    .btn-cont {
+        display: none;
+    }
+    .btn-mobile {
+        display: block;
+    }
+    .btn-mobile button {
+        display: block;
+        border: none;
+        background-color: transparent;
+        position: relative;
+        left: 70px;
+    }
+    .key-clear{
+        display: block;
+    }
+    .logo img{
+        position: relative;
+        right: 70px;
+        width: 60px;
+        height: 60px;
+    }
+}
+
+/* parte so about do portfolio */
+
+.sobre{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 1rem;
+    margin-top: 170px;
+}
+.sobre-img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 4px aqua;
+    border-top: transparent;
+    border-left: transparent;
+}
+.sobre .sobre-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: none;
+}
+.text{
+    width: 800px;
+    height: 400px;
+    padding: 70px 90px;
+}
+.text p{
+    color: black;
+    font-size: 14px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.text p img{
+    cursor: pointer;
+}
+
+@media screen and (max-width: 730px){
+    .sobre{
+        display: block;
+    }
+    .sobre .sobre-img img{
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        border: none;
+    }
+    .text{
+        width: 470px;
+        height: 400px;
+        padding: 70px 10px;
+        margin-top: 20px;
+    }
+}
+/* parte do projetos do portfolio */
+
+.projeto{
+    width: 100%;
+    background-color: transparent;
+}
+.projeto .pro{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 3rem;
+}
+.conteiner{
+    width: 270px;
+    height: 300px;
+    background: linear-gradient(aqua , rgb(52, 97, 97));
+    border: solid 2px aqua;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.conteiner img{
+    width: 150px;
+    height: auto;
+}
+.links{
+    width: 130px;
+    height: 35px;
+    background-color: aqua;
+    border: none;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    border-radius: 10px;
+    justify-content: center;
+    margin-top: 25px;
+    align-items: center;
+}
+@media screen and (max-width: 730px){
+    .projeto .pro{
+        display: block;
+        margin-left: 10px;
+    }
+    .projeto h2{
+        display: flex;
+        font-size: 32px;
+        margin-bottom: 90px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color: rgb(0, 120, 120);
+    }
+    .conteiner{
+        margin-bottom: 40px;
+        width: 360px;
+        height: 300px;
+    }
+}
+/* parte do contacto do portfolio */
+
+
+.interface_1{
+    padding: 80px 4%;
+    margin-top: 80px;
+    background-color: transparent;   
+}
+form{
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 0px 10px 20px #202020bf;
+    gap: 10px;
+    border-radius: 16px;
+    margin-top: 30px;
+    padding: 20px 20px 20px 20px;
+}
+h2{
+    margin-top: 10px 10px;
+    padding: 0px 10px;
+    font-size: 36px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+h2 span{
+    color: aqua;
+    font-family: Arial, Helvetica, sans-serif;
+}
+form input{
+    width: 65%;
+    background-color: #fffdfd;
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;
+    display: flex;
+    outline: none;
+    justify-content: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 15px 15px;
+    margin-top: -1px;
+    color: black;
+    font-size: 17px;
+}
+form input::placeholder{
+    color: aqua;
+}
+form textarea{
+    resize: none;
+    width: 65%;
+    max-height: 400px;
+    background-color: #dcdcdc;
+    border: 0;
+    outline: 0;
+    padding: 30px 15px;
+    border-radius: 5px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #000;
+    font-size: 18px;
+}
+form textarea::placeholder{
+    color: aqua;
+}
+form textarea:hover{
+    box-sizing: 0px 0px 0px #202020;    
+}
+form .btn-enviar{
+    margin-top: 10px;
+
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+form .btn-enviar a button{
+    width: 180px;
+    height: 45px;
+    color: #fff;
+    border: none;
+    display: flex;
+    margin-top: 35px;
+    cursor: pointer;
+    transition: .2s;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media screen and (max-width:730px){
+    .interface_1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; 
+    }
+    form{
+        width: 430px;
+        margin-left: 10px;
+    }
+    h2{
+        margin-left: 100px;
+    }
+}

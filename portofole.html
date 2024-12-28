@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="portofole.css">
+    <title>button</title>
+</head>
+<body>
+    
+    <header id="inicio" class="inicio">
+        <div class="home">
+            <div class="logo">
+                <img src="logo_portflio.png" width="80" height="80">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Home</a></li>
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#project">project</a></li>
+                    
+                </ul>
+            </nav>
+            <div class="btn-cont">
+                <button type="submit">Contacto</button>
+            </div>
+            <div class="btn-mobile">
+                <button ><img src="icones/whatsapp-svgrepo-com.svg" width="30" height="30" style="position: relative; left: 30px; top: 5px;"></button>
+            </div>
+            <div class="btn-mobile">
+                <button  onclick="menu()">
+                    <img class="icones" src="icones/menu-mobile (1).png" width="40" height="40">
+                </button>
+            </div>
+        </div>
+        <div class="menu-mobile">
+            <ul>
+                <li><a href="#inicio">Home</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#project">project</a></li>
+                <li><a href="#inicio">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+    <section class="about" id="about">
+        <div class="sobre">
+            <div class="sobre-img">
+                <img src="icones/rabo.png" alt="">
+            </div>
+            <div class="text">
+                <h1>
+                    Olá Muito Prazer
+                </h1>
+                <p>
+                    Eu chamo-me Délcio Manuel sou um estudante de programação web e programação desktop
+                    sou um jovem a preucura de novos desafio, para melhorar as minhas capacidades e descobrir
+                    novas tecnológia.
+                    <p>
+                        Me apanxonei pela programação quando eu foi entrei no insino médio e quando eu descobrir o que 
+                        posso fazer com esse consecimento <span style="color: aqua;">(poder)</span> , e naquele momento eu sabia o que queria ser no futuro 
+                        com muita dedicação e muito esforço eu aprendi varias linguagem diferente e que na qual eu 
+                        me dedico mais python, c, c#, html, css, javascript, php,... 
+                    </p>
+                    <br>
+                    <p>
+                        <img src="icones/facebook-logo-meta-svgrepo-com.svg" width="30" height="30">
+                        <img src="icones/tiktok-icon-white-1-logo-svgrepo-com.svg" width="30" height="30">
+                        <img src="icones/instagram-color-svgrepo-com.svg" width="30" height="30">
+                    </p>
+                    
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="project" class="projeto">
+        <h2>Projecto em Cursos</h2>
+        <div class="pro">
+            <div class="conteiner">
+                <img src="icones/linguagem/start.webp" alt="">
+                <a href="#" class="links">ver mais</a>
+            </div>
+            <div class="conteiner">
+                <img src="icones/linguagem/start.webp" alt="">
+                <a href="#" class="links">ver mais</a>
+            </div>
+            <div class="conteiner">
+                <img src="icones/linguagem/start.webp" alt="">
+                <a href="#" class="links">ver mais</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="formulatio" id="contato">
+        <div class="interface_1">
+            <h2> FALA <span> COMIGO.</span></h2>
+
+            <form action="pasta.php" method="post" >
+                <p id="teste"></p>
+                <input type="text" id="nome" name="nome" placeholder="insira o teu nome" required autocomplete="off">
+                <input type="text" id="e-mail" name="e-mail" placeholder="insira o e-mail" required autocomplete="off">
+                <input type="text" id="numero" name="numero" placeholder="insira o teu número" >
+                <textarea name=""  id="mensagem" name="mensagem" placeholder="sua mensagem" required autocomplete="off"></textarea>
+                <div class="btn-enviar">
+                    <a href="obrigado.html" style="text-decoration: none;">
+                    <button onclick="verificar()" type="submit" > Enviar</button></a>
+                    <script src="login.js"></script>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <section id="footer" class="footer">
+        <div class="box">
+
+            <img src="icones/facebook-logo-meta-svgrepo-com.svg" width="40" height="40">
+            <img src="icones/tiktok-icon-white-1-logo-svgrepo-com.svg" width="40" height="40">
+            <img src="icones/instagram-color-svgrepo-com.svg" width="40" height="40">
+        </div>
+    </section>
+
+    <script>
+        function menu(){
+            let menuMobile = document.querySelector('.menu-mobile');
+            if(menuMobile.classList.contains('key-clear')){
+                menuMobile.classList.remove('key-clear');
+                document.querySelector('.icones').src = "icones/menu-mobile (1).png";
+            }else{
+                menuMobile.classList.add('key-clear');
+                document.querySelector('.icones').src = "icones/menu-mobile (2).png";
+            }
+        }
+    </script>
+</body>
+</html>
